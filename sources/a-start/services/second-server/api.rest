@@ -1,0 +1,20 @@
+@host=http://localhost:3001
+
+###
+
+GET {{host}}/colors
+
+###
+
+PUT {{host}}/colors/1
+Content-Type: application/json
+
+{
+  "name": "pink",
+  "year": 1990,
+  "color": "#ff0000"
+}
+
+###
+
+DELETE {{host}}/colors/1

@@ -1,0 +1,16 @@
+@host=http://localhost:3000
+
+###
+
+GET {{host}}/todos
+
+###
+
+POST {{host}}/todos
+Content-Type: application/json
+
+{ "name": "A new todo which is not completed yet" }
+
+###
+
+DELETE {{host}}/todos/1

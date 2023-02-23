@@ -1,0 +1,9 @@
+@host=http://localhost:10000
+
+###
+
+GET {{host}}/todos
+
+###
+
+DELETE {{host}}/todos/3
